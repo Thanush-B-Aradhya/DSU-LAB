@@ -51,9 +51,11 @@ class program1
             if (bit == 1)
                 System.out.print("-1, +1\t");
             else
+            {
                 System.out.print(lastTransaction == 1 ? "-1, +1" : "+1, -1");
+                lastTransaction = -lastTransaction;
             }
-        lastTransaction = -lastTransaction;
+        }
         System.out.println();
     }
 
@@ -73,7 +75,7 @@ class program1
         System.out.println("2. Polar NRZ");
         System.out.println("3. Manchester");
         System.out.println("4. Differential Manchester");
-        System.out.println("Enter your choice (1-4)");
+        System.out.print("Enter your choice (1-4): ");
         int choice = sc.nextInt();
 
         switch(choice)
