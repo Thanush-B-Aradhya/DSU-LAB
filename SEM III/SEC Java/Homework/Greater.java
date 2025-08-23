@@ -4,7 +4,7 @@
 
 import java.util.*;
 
-class Greater-20-08{
+class Greater{
 
     public static void main(String[] args) {
 
