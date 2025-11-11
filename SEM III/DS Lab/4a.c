@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 4
+#define MAX 50
 
 struct Stack {
     int arr[MAX];
