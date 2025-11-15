@@ -1,11 +1,15 @@
-public class LogicalAndExample{
-    public static void main(String[]args){
-        int age=25;
-        boolean haslicense=true;
-        if(age>18&& haslicense){
-            System.out.println("Eligible to drive :");
-        }else{
-            System.out.println("not eligible to drive .");
+import java.util.Scanner;
+public class LogicalAndExample {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your age: ");
+        int age = sc.nextInt();
+        boolean hasLicense = true;
+        if (age > 18 && hasLicense) {
+            System.out.println("Eligible to drive.");
+        } else {
+            System.out.println("Not Eligible to drive.");
         }
+        sc.close();
     }
 }
